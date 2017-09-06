@@ -270,7 +270,7 @@ function setElements() {
 }
 
 function getCountryOptions() {
-	var elOptions = '<option value="">選擇縣市</option>';
+	var elOptions = '<option value="">請選擇縣市</option>';
 	var onlyCity = this.options.only || this.options.onlyCity; // this.options.only 下個版本棄用
 
 	for (var i = 0, j = data$1.countries.length; i < j; i++) {
@@ -288,10 +288,10 @@ function getCountryOptions() {
 
 function getDistrictOptions(index) {
 	if (!index) {
-		return '<option value="" selected>---</option>';
+		return '<option value="" selected>請選擇區域</option>';
 	}
 
-	var elOptions = '<option value="" selected>選擇區域</option>';
+	var elOptions = '<option value="" selected>請選擇區域</option>';
 
 	for (var i = 0, j = data$1.districts[index][0].length - 1; i <= j; i++) {
 		// format: <option value="中正區" data-zipcode="100">中正區</option>

@@ -205,7 +205,7 @@ function setCountyElement() {
 	this.elCounty.name = this.options.countyFiledName;
 }
 
-function getCountryOptions() {
+function getCountyOptions() {
 	var elOptions = '<option value="">請選擇縣市</option>';
     var onlyCity = this.options.only || this.options.onlyCity; // this.options.only 下個版本棄用
 
